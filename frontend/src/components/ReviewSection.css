@@ -1,0 +1,175 @@
+.review-section1 {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 30px 0; /* Added padding for top and bottom */
+  margin: 0; /* Ensure no margin at the start */
+}
+
+.review-section1 h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+/* Reviews container layout */
+.reviews-container1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.review-card1 {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex: 1 1 300px; /* Make cards responsive to the width of the screen */
+  max-width: 300px;
+  transition: transform 0.2s ease;
+  margin: 10px; /* Optional margin for spacing between cards */
+}
+
+.review-card1:hover {
+  transform: translateY(-10px);
+}
+
+.review-content1 h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.rating1 {
+  font-size: 1.2rem;
+  color: #28a745; /* Change star color to green */
+}
+
+/* Example for star ratings - assuming stars are represented by emojis or icons */
+.rating1::before {
+  content: '★★★★★'; /* Example star rating, replace with actual stars if using icons */
+  color: #28a745; /* Ensure stars are green */
+  font-size: 1.2rem;
+}
+
+.review-text1 {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Pagination styles */
+.pagination {
+  margin-top: 20px; /* Add spacing above pagination */
+}
+
+.pagination button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.pagination button:hover {
+  background-color: #218838;
+}
+
+.pagination span {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.pagination button[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Responsive Styles */
+
+/* For tablets and small laptops */
+@media (max-width: 1024px) {
+  .review-section1 {
+    padding: 40px 20px;
+  }
+
+  .review-section1 h2 {
+    font-size: 2rem;
+  }
+
+  .review-card1 {
+    max-width: 250px; /* Decrease max-width for smaller screens */
+  }
+
+  .review-content1 h3 {
+    font-size: 1.3rem;
+  }
+
+  .review-text1 {
+    font-size: 0.95rem;
+  }
+}
+
+/* For large mobile phones */
+@media (max-width: 768px) {
+  .review-section1 {
+    padding: 30px 15px;
+  }
+
+  .review-section1 h2 {
+    font-size: 1.8rem;
+  }
+
+  .review-card1 {
+    max-width: 220px;
+    padding: 15px;
+  }
+
+  .review-content1 h3 {
+    font-size: 1.2rem;
+  }
+
+  .review-text1 {
+    font-size: 0.9rem;
+  }
+
+  .pagination button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  .review-section1 {
+    padding: 20px 10px;
+  }
+
+  .review-section1 h2 {
+    font-size: 1.5rem;
+  }
+
+  .review-card1 {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .review-content1 h3 {
+    font-size: 1.1rem;
+  }
+
+  .review-text1 {
+    font-size: 0.85rem;
+  }
+
+  .pagination button {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+    margin: 0 5px;
+  }
+
+  .pagination span {
+    font-size: 1rem;
+  }
+}

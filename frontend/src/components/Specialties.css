@@ -1,0 +1,167 @@
+/* General container styling */
+.specialties-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Headings */
+h1 {
+  color: #4CAF50;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem; /* Reduced for smaller screens */
+  transform: translateY(-20px);
+  animation: slideInDown 0.6s forwards;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Specialty cards */
+.specialty {
+  margin-bottom: 30px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  opacity: 0;
+  animation: fadeInUp 0.6s forwards;
+  transform: translateY(20px);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Specialty images */
+.specialty-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.specialty:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive subheading styles */
+h2 {
+  color: #333;
+  margin-top: 20px;
+  font-size: 1.6rem; /* Adjusted size */
+  transform: translateY(-20px);
+  opacity: 0;
+  animation: slideInUp 0.6s forwards;
+  animation-delay: 0.5s;
+}
+
+h3 {
+  color: #4CAF50;
+  margin-top: 15px;
+  font-size: 1.4rem; /* Reduced for mobile */
+}
+
+/* Paragraphs and lists */
+p {
+  color: #555;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+li {
+  color: #666;
+  margin: 5px 0;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  /* Adjust container padding for smaller screens */
+  .specialties-container {
+    padding: 15px;
+  }
+
+  /* Adjust heading font size for mobile */
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem; /* Smaller for mobile */
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  /* Specialty card margins and padding for mobile */
+  .specialty {
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  /* Adjust image width and height */
+  .specialty-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further adjustments for very small screens (mobile phones) */
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  /* Specialty card styling for mobile phones */
+  .specialty {
+    padding: 8px;
+  }
+}

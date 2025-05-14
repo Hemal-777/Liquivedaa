@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  
+  <!-- Title and Meta Description for SEO -->
+  <title>Baquaiveda Clinic - Holistic Unani and Ayurvedic Healing</title>
+  <meta name="description" content="Baquaiveda Clinic offers holistic healing through traditional Unani and Ayurvedic medicine, combining ancient practices with modern care. Discover our natural, chemical-free remedies crafted in-house to treat root causes for mind, body, and spirit wellness." />
+  <meta name="keywords" content="Baquaiveda Clinic, Unani medicine, Ayurvedic treatment, holistic healing, natural medicine, chemical-free remedies, traditional wellness" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.baquaiveda.com" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Baquaiveda Clinic - Holistic Unani and Ayurvedic Healing" />
+  <meta property="og:description" content="Discover holistic, chemical-free treatments rooted in Unani and Ayurvedic traditions at Baquaiveda Clinic." />
+  <meta property="og:image" content="https://www.baquaiveda.com/images/og-image.jpg" />
+  <meta property="og:url" content="https://www.baquaiveda.com" />
+
+  <!-- Twitter Metadata -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Baquaiveda Clinic - Holistic Unani and Ayurvedic Healing" />
+  <meta name="twitter:description" content="Experience holistic, natural medicine at Baquaiveda Clinic, specializing in traditional Unani and Ayurvedic treatments." />
+  <meta name="twitter:image" content="https://www.baquaiveda.com/images/og-image.jpg" />
+
+  <!-- Favicon and Apple Touch Icon -->
+  <link rel="icon" href="./images/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" href="./images/favicon-32x32.png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
+
+  <!-- JSON-LD Structured Data (Schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "Baquaiveda Clinic",
+    "url": "https://www.baquaiveda.com",
+    "logo": "./images/favicon-16x16.png",
+    "description": "Baquaiveda Clinic combines traditional Unani and Ayurvedic practices for holistic healing, offering natural, chemical-free medicines made in-house.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Healing Lane",
+      "addressLocality": "City Name",
+      "addressRegion": "State",
+      "postalCode": "12345",
+      "addressCountry": "Country"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-800-555-5555",
+      "contactType": "Customer Support",
+      "areaServed": "US",
+      "availableLanguage": "English"
+    },
+    "medicalSpecialty": "AlternativeMedicine",
+    "sameAs": [
+      "https://www.facebook.com/baquaiveda",
+      "https://www.instagram.com/baquaiveda",
+      "https://www.twitter.com/baquaiveda"
+    ]
+  }
+  </script>
+
+  <!-- Loader Styling -->
+  <style>
+    /* Full-page loader styling */
+    #loader {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+    .spinner {
+      width: 50px;
+      height: 50px;
+      border: 5px solid rgba(0, 0, 0, 0.1);
+      border-top: 5px solid #4CAF50;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    /* Fade-out effect for loader */
+    .fade-out {
+      animation: fadeOut 0.5s forwards;
+    }
+    @keyframes fadeOut {
+      to { opacity: 0; visibility: hidden; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Loader Section -->
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  
+  <!-- Main Content -->
+  <div id="root" style="display: none;">
+    <!-- Add your main page content here -->
+  </div>
+
+  <!-- Footer Section -->
+  <footer style="display: none;">
+    <p>&copy; 2023 Baquaiveda Clinic - All Rights Reserved.</p>
+    <a href="https://www.baquaiveda.com/privacy-policy">Privacy Policy</a>
+    <a href="https://www.baquaiveda.com/terms-of-service">Terms of Service</a>
+  </footer>
+
+  <!-- JavaScript for Loader -->
+  <script>
+    // Wait for page to load, then hide loader
+    window.addEventListener("load", function() {
+      document.getElementById("loader").classList.add("fade-out");
+      document.getElementById("root").style.display = "block";
+      document.querySelector("footer").style.display = "block";
+    });
+  </script>
+</body>
+</html>

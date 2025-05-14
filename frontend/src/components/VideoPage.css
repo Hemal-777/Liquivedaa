@@ -1,0 +1,69 @@
+/* Video Container */
+.video-container {
+  position: relative;
+  width: 100vw; /* Full viewport width */
+  height: 90vh; /* Full viewport height */
+  overflow: hidden; /* Hide overflow */
+}
+
+/* Background Video */
+.background-video {
+  position: absolute; /* Position the video absolutely */
+  top: 0; /* Align to top */
+  left: 0; /* Align to left */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  object-fit: cover; /* Cover the area without stretching */
+  opacity: 0.8; /* Slightly reduce opacity for better text contrast */
+  transition: opacity 0.5s ease-in-out; /* Smooth opacity transition */
+}
+
+/* Responsive Text */
+.responsive-text {
+  font-size: 2rem; /* Default text size */
+  font-family: Arial, sans-serif; /* Font family */
+  color: #fff; /* White text */
+  z-index: 1; /* Above video */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
+  position: absolute; /* Absolute positioning */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for perfect centering */
+  animation: fadeIn 1s ease-in-out; /* Animation for the text */
+}
+
+/* Keyframes for Fade In Effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%); /* Start slightly higher */
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%); /* End at the center */
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .video-container {
+    height: 80vh; /* Adjust height for mobile for better visibility */
+    padding: 10px; /* Less padding on mobile */
+  }
+
+  .responsive-text {
+    font-size: 1.5rem; /* Smaller text size on mobile */
+  }
+}
+
+@media (max-width: 576px) {
+  .responsive-text {
+    font-size: 1.2rem; /* Further reduce text size for very small screens */
+  }
+}
+
+/* Hover Effect on Video */
+.video-container:hover .background-video {
+  opacity: 0.9; /* Darken the video on hover */
+  transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+}

@@ -1,0 +1,218 @@
+.banner {
+  position: relative;
+  background-image: url('/public/images/background front.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 20px;
+  overflow: hidden; /* Ensures overlay stays within banner */
+}
+
+/* .banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1; 
+} */
+
+.banner * {
+  position: relative;
+  z-index: 2; /* Position content above the overlay */
+}
+
+
+/* New style for the h1 at the top of the banner */
+.banner-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px; /* Space between this title and the rest of the content */
+  z-index: 2;
+  text-align: center; /* Center the text */
+}
+
+/* Original content styling */
+.banner-content {
+  color: white;
+  padding: 20px;
+  max-width: 600px;
+  z-index: 1;
+  padding-top: 250px;
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px; /* Adjust spacing between lines as needed */
+}
+
+.banner-content h1,
+.banner-content p {
+  color: white;
+  margin: 0;
+}
+
+.banner-content h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.banner-content p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.banner-content .btn {
+  position: relative;
+  cursor: pointer;
+  margin-top: 20px;
+  z-index: 2;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 15px;
+}
+
+.banner-text{
+  margin-top: 200px;
+}
+
+.banner-text p{
+  font-size:1.5rem;
+  font-weight: bolder;
+}
+
+.ban{
+  padding: 300px;
+}
+.ban {
+  font-size: 24px; /* Adjust the size as needed */    
+  font-weight: bold;
+  border: 3px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  margin-left: 10px;
+}
+
+.buuu {
+  height: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+.banner-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+
+/* Media queries for responsiveness */ 
+@media (max-width: 1024px) {
+  .banner {
+    height: 80vh;
+    padding: 20px;
+  }
+
+  .banner-title {
+    font-size: 2.5rem;
+  }
+
+  .banner-content {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .banner-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .banner-content p {
+    font-size: 18px;
+  }
+
+  .banner-content .btn {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 70vh;
+  }
+
+  .banner-title {
+    font-size: 2rem;
+  }
+
+  .banner-content h1 {
+    font-size: 2rem;
+  }
+
+  .banner-content p {
+    font-size: 16px;
+  }
+
+  .banner-content .btn {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner {
+    height: 40vh;
+    padding: 20px;
+    position: relative;
+  }
+
+  .banner-title {
+    font-size: 1.5rem;
+  }
+  .buuu{
+    height: 50px;
+  }
+
+  .align-items-center h1{
+    font-size: 28px;
+  }
+
+  .banner-content{
+    position: absolute;
+    right: 94px;
+    top: 180px;
+  }
+
+  .banner-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .banner-content p {
+    font-size: 14px;
+  }
+
+  .banner-content .btn {
+    width: 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .ban {
+    font-size: 5px; /* Adjust the size as needed */    
+    font-weight: bold;
+    border: 3px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin-left: 70px;
+  }
+}

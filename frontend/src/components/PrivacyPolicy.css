@@ -1,0 +1,93 @@
+.privacy-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #4CAF50; /* Main theme color */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  p {
+    color: #555;
+    line-height: 1.6;
+    margin: 10px 0;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  li {
+    color: #555;
+    margin: 5px 0;
+  }
+  @media (max-width: 1024px) {
+    .privacy-container {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Smaller heading size */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Smaller subheading size */
+    }
+
+    p {
+        font-size: 0.95rem; /* Smaller paragraph size */
+    }
+}
+
+/* For large mobile phones */
+@media (max-width: 768px) {
+    .privacy-container {
+        padding: 10px; /* Further reduce padding */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Even smaller heading size */
+    }
+
+    h2 {
+        font-size: 1.3rem; /* Smaller subheading size */
+    }
+
+    p {
+        font-size: 0.9rem; /* Smaller paragraph size */
+    }
+}
+
+/* For small mobile phones */
+@media (max-width: 480px) {
+    .privacy-container {
+        padding: 8px; /* Minimal padding for very small screens */
+    }
+
+    h1 {
+        font-size: 1.2rem; /* Smallest heading size */
+    }
+
+    h2 {
+        font-size: 1.1rem; /* Small subheading size */
+    }
+
+    p {
+        font-size: 0.85rem; /* Smallest paragraph size */
+    }
+
+    ul {
+        padding-left: 15px; /* Less padding for lists */
+    }
+}

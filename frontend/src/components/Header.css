@@ -1,0 +1,528 @@
+/* Top Bar */
+.top-bar {
+  background-color: #28a745; /* Green background */
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+.discount-text {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.contact-info {
+  font-size: 14px;
+  margin-left: 500px;
+}
+
+.contact-info span {
+  margin-right: 5px;
+}
+
+.contact-info {
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+/* Navbar */
+.navbar {
+  padding: 0px 0;
+  background-color: #000000;
+  height: 150px;
+}
+
+
+.navbar-nav .nav-item .nav-link {
+  font-size: 14px;
+  padding: 8px 15px;
+  color: white; /* Text color */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #28a745; /* Hover color */
+}
+
+.nav-item{
+  padding: 5px;
+}
+.nav-item:hover{
+  scale: 1.2;
+}
+.navbar-collapse{
+  margin-left: 100px;
+}
+
+.nav-icons .nav-icon {
+  margin-left: 15px;
+  font-size: 18px;
+  color: #000;
+}
+.nav-icon{
+  padding: 2px;
+}
+.nav-icons{
+  margin-right: 60px;
+}
+
+.nav-icons .nav-icon:hover {
+  color: #28a745;
+}
+
+.logo{
+  width: 300px;
+  height: 300px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .discount-text, .contact-info {
+    text-align: center;
+    width: 100%;
+  }
+
+  .contact-info {
+    margin-top: 5px;
+  }
+}
+.top-bar {
+  padding: 10px 0;
+  background-color: #28a745; /* Bootstrap success color */
+}
+
+.discount-text {
+  font-size: 12px;
+}
+
+.contact-info {
+  font-size: 12px;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="%23000000" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>');
+}
+
+.nav-link {
+  font-size: 9px;
+  margin: 0 10px;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+}
+
+.nav-icon {
+  font-size: 18px;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+}
+
+.nav-icon:hover {
+  color: #28a745; /* Bootstrap success color */
+}
+
+/* AOS specific styles */
+[data-aos="fade-down"] {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+[data-aos="fade-down"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-aos="fade-up"] {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+[data-aos="fade-up"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-aos="fade-left"] {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+[data-aos="fade-left"].aos-animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+@media (max-width: 1360px) {
+  .discount-text, .contact-info {
+    text-align: center;
+    width: 100%;
+  }
+
+  .contact-info {
+    margin-top: 5px;
+  }
+}
+.top-bar {
+  padding: 10px 0;
+  background-color: #28a745; /* Bootstrap success color */
+}
+
+.discount-text {
+  font-size: 14px;
+}
+
+.contact-info {
+  font-size: 14px;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="%23000000" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>');
+}
+
+.nav-link {
+  font-size: 10px;
+  margin: 0 10px;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+}
+
+.nav-icon {
+  font-size: 18px;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+}
+
+.nav-icon:hover {
+  color: #28a745; /* Bootstrap success color */
+}
+
+/* AOS specific styles */
+[data-aos="fade-down"] {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+[data-aos="fade-down"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-aos="fade-up"] {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+[data-aos="fade-up"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-aos="fade-left"] {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+[data-aos="fade-left"].aos-animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+@media (max-width: 768px) {
+  .top-bar {
+    padding: 8px 0; /* Reduced padding */
+  }
+
+  .discount-text,
+  .contact-info {
+    text-align: center;
+    width: 100%;
+    margin-top: 5px; /* Added margin for spacing */
+  }
+
+  .navbar-collapse {
+    margin-left: 0; /* Reset margin for small screens */
+    padding: 0 10px; /* Padding adjustment */
+  }
+
+  .navbar-nav .nav-item {
+    margin: 5px 0; /* Vertical spacing for items */
+  }
+
+  .nav-icons {
+    margin-right: 0; /* Reset margin for small screens */
+    justify-content: center; /* Center icons */
+  }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+  .logo {
+    padding-left: 10px; /* Less padding for logo */
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    font-size: 9px; /* Smaller link size */
+    padding: 6px 10px; /* Smaller padding */
+  }
+
+  .nav-icon {
+    font-size: 16px; /* Smaller icon size */
+  }
+
+  .discount-text,
+  .contact-info {
+    font-size: 12px; /* Smaller font size for text */
+  }
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="%23000000" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>');
+}
+
+/* AOS specific styles */
+[data-aos="fade-down"] {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+[data-aos="fade-down"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-aos="fade-up"] {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+[data-aos="fade-up"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-aos="fade-left"] {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+[data-aos="fade-left"].aos-animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+/* Additional responsive styles */
+@media (max-width: 768px) {
+  .navbar-collapse {
+    padding: 10px; /* Add padding to collapsed navbar */
+  }
+
+  .navbar-nav .nav-item {
+    margin: 5px 0; /* Space out nav items */
+  }
+
+  .nav-icons {
+    margin-top: 10px; /* Stack nav icons below navbar */
+    justify-content: center; /* Center icons */
+  }
+}
+
+/* Make sure toggler icon is visible */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="%23000000" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>');
+}
+
+
+/* Adjust font sizes for smaller screens */
+@media (max-width: 480px) {
+  .logo {
+    max-width: 120px; /* Adjust logo size */
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 14px; /* Smaller link size */
+  }
+
+  .nav-icon {
+    font-size: 16px; /* Smaller icon size */
+  }
+
+  .discount-text,
+  .contact-info {
+    font-size: 12px; /* Smaller font size for text */
+  }
+}
+
+
+.navbar .logo {
+  width: 330px; /* Adjust logo size */
+}
+
+/* Navbar Toggler Styles */
+.navbar-toggler {
+  border: none; /* Remove border */
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="black" stroke-width="3" d="M4 7h22M4 15h22M4 23h22" /%3E%3C/svg%3E'); /* Custom icon */
+}
+
+/* Navbar Links Styles */
+.navbar-nav .nav-link {
+  color: white; /* Dark text color */
+  font-weight: bold; /* Bold text */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff; /* Bootstrap primary color on hover */
+}
+
+/* Nav Icons Styles */
+.nav-icons {
+  display: flex;
+  align-items: center; /* Center icons vertically */
+  color: white;
+}
+
+.nav-icon {
+  color: #333; /* Dark color for icons */
+  font-size: 20px; /* Icon size */
+  margin-left: 20px; /* Space between icons */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.nav-icon:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+  background-color: #ffffff; /* White background for dropdown */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.dropdown-item {
+  color: #333; /* Dark color for dropdown items */
+  padding: 10px 20px; /* Padding for dropdown items */
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa; /* Light gray on hover */
+  color: #007bff; /* Change color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center; /* Center text on mobile */
+  }
+  
+  .nav-icon {
+    margin-left: 10px; /* Reduce margin on mobile */
+  }
+  .top-bar {
+    padding: 10px 0;
+    font-size: 9px;
+    display: none; /* Adjust font size */
+  }
+}
+
+/* Media query for 13-inch laptop (1366px and below) */
+@media (max-width: 1366px) {
+  /* Top Bar */
+  .top-bar {
+    padding: 10px 0;
+    font-size: 9px; /* Adjust font size */
+  }
+
+  .discount-text {
+    font-size: 9px;
+  }
+
+  .contact-info {
+    margin-left: 400px; /* Adjust margin */
+    font-size: 9px;
+  }
+
+  /* Navbar */
+  .navbar {
+    padding: 8px 0;
+    background-color: #000;
+  }
+
+  .logo {
+    max-width: 180px; /* Increased logo size */
+    padding-left: 30px; /* Adjust padding */
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    font-size: 9x; /* Adjust font size */
+    padding: 8px 12px; /* Adjust padding */
+  }
+
+  .navbar-collapse {
+    margin-left: 80px; /* Adjust margin */
+  }
+
+  .nav-icons .nav-icon {
+    margin-left: 10px; /* Adjust margin */
+    font-size: 17px; /* Adjust icon size */
+  }
+
+  .nav-icons {
+    margin-right: 40px; /* Adjust margin */
+  }
+
+  /* AOS specific styles */
+  [data-aos="fade-down"],
+  [data-aos="fade-up"],
+  [data-aos="fade-left"] {
+    opacity: 0;
+    transform: translateY(10px); /* Slightly less translate for smoother effect on laptops */
+  }
+
+  [data-aos="fade-down"].aos-animate,
+  [data-aos="fade-up"].aos-animate,
+  [data-aos="fade-left"].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  /* For smaller screens on laptops */
+  @media (max-width: 1024px) {
+    .contact-info {
+      margin-left: 300px; /* Adjust margin for smaller laptop screens */
+    }
+
+    .navbar-nav .nav-link {
+      font-size: 9px; /* Further reduce font size */
+    }
+
+    .nav-icons {
+      margin-right: 20px; /* Adjust icon spacing */
+    }
+  }
+
+.stickk {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Adjust as needed */
+}

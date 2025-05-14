@@ -1,0 +1,28 @@
+/* Wishlist.css */
+.wishlist {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wishlist h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .wishlist-items {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .wishlist-items li {
+    font-size: 16px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .wishlist-items li:last-child {
+    border-bottom: none;
+  }
+  

@@ -1,0 +1,258 @@
+WishlistPage.css
+.wishlist-page {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f0f4f8; /* Light background color */
+  border-radius: 10px; /* Rounded corners for the entire page */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  font-size: 28px; /* Larger font size */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.wishlist-items {
+  list-style-type: none;
+  padding: 0;
+}
+
+.wishlist-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background-color: #fff; /* White background for items */
+  transition: transform 0.2s; /* Smooth scale transition */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for items */
+}
+
+.wishlist-item:hover {
+  transform: scale(1.02); /* Slightly scale up on hover */
+}
+
+.wishlist-item h4 {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+  color: #333; /* Darker text for item name */
+}
+
+.wishlist-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #777; /* Grey text for price */
+}
+
+.wishlist-actions {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Transition for color and scale */
+}
+
+button:hover {
+  transform: scale(1.05); /* Scale up slightly on hover */
+}
+
+button:active {
+  background-color: #ccc; /* Active state color */
+}
+
+.wishlist-actions button {
+  background-color: #007bff; /* Primary button color */
+  color: white;
+  font-size: 14px;
+}
+
+.wishlist-actions button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.wishlist-actions button.remove {
+  background-color: #dc3545; /* Danger color for remove button */
+}
+
+.wishlist-actions button.remove:hover {
+  background-color: #c82333; /* Darker shade on hover for remove */
+}
+
+.wishlist-empty {
+  text-align: center;
+  color: #555;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+
+
+/* WishlistPage.css */
+.wishlist-page {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f0f4f8; /* Light background color */
+  border-radius: 10px; /* Rounded corners for the entire page */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  font-size: 28px; /* Larger font size */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.wishlist-items {
+  list-style-type: none;
+  padding: 0;
+}
+
+.wishlist-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background-color: #fff; /* White background for items */
+  transition: transform 0.2s; /* Smooth scale transition */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for items */
+}
+
+.wishlist-item:hover {
+  transform: scale(1.02); /* Slightly scale up on hover */
+}
+
+.wishlist-item h4 {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+  color: #333; /* Darker text for item name */
+}
+
+.wishlist-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #777; /* Grey text for price */
+}
+
+.wishlist-actions {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Transition for color and scale */
+}
+
+.wishlist-actions button {
+  background-color: #28a745; /* Green color for buttons */
+  color: white;
+  font-size: 14px;
+}
+
+.wishlist-actions button:hover {
+  background-color: #218838; /* Darker shade on hover */
+  transform: scale(1.05); /* Scale up slightly on hover */
+}
+
+.wishlist-actions button.remove {
+  background-color: #dc3545; /* Danger color for remove button */
+}
+
+.wishlist-actions button.remove:hover {
+  background-color: #c82333; /* Darker shade on hover for remove */
+}
+
+/* Empty state styling */
+.wishlist-empty {
+  text-align: center;
+  color: #555;
+  font-size: 18px;
+  margin-top: 50px; /* Added space for visibility */
+  padding: 20px;
+  background-color: #fff; /* Background for the empty state message */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Additional styling for empty state */
+.wishlist-empty h3 {
+  font-size: 24px;
+  color: #333;
+}
+
+.wishlist-empty p {
+  font-size: 16px;
+  color: #777; /* Grey color for supporting text */
+}
+@media (max-width: 768px) {
+  h2 {
+    font-size: 24px; /* Smaller font size for smaller screens */
+  }
+
+  .wishlist-item {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align content to the start */
+  }
+
+  .wishlist-item h4 {
+    font-size: 16px; /* Smaller text for titles */
+  }
+
+  .wishlist-item p {
+    font-size: 13px; /* Smaller text for details */
+  }
+
+  button {
+    padding: 8px 12px; /* Smaller padding for buttons */
+    font-size: 13px; /* Reduce button font size */
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 22px; /* Even smaller font size for mobile phones */
+  }
+
+  .wishlist-item {
+    padding: 10px; /* Reduce padding for items */
+  }
+
+  .wishlist-item h4 {
+    font-size: 15px; /* Smaller text for very small screens */
+  }
+
+  .wishlist-item p {
+    font-size: 12px;
+  }
+
+  button {
+    padding: 6px 10px; /* Smaller padding for very small screens */
+    font-size: 12px;
+  }
+
+  .wishlist-empty h3 {
+    font-size: 20px; /* Adjust empty state heading */
+  }
+
+  .wishlist-empty p {
+    font-size: 14px;
+  }
+}

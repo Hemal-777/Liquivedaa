@@ -1,0 +1,46 @@
+.ayurvedic-solutions-page {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .ayurvedic-solutions-page h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+  }
+  
+  .ayurvedic-solutions-page p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  
+  .service-col {
+    margin-bottom: 30px;
+  }
+  
+  .solution-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .solution-card img {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .solution-card .card-title {
+    font-size: 22px;
+    color: #4a4a4a;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .solution-card .card-text {
+    font-size: 16px;
+    color: #6c757d;
+    line-height: 1.5;
+  }

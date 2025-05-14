@@ -1,0 +1,167 @@
+/* Overall page styling with green theme */
+.appointment-page {
+    background-color: #e9f5e9; /* Light green background */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .appointment-container {
+    background-color: #2d6a4f; /* Dark green form container */
+    padding: 2rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    color: white;
+  }
+  
+  /* Form header styling */
+  h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  /* Label and input styling */
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  .back{
+    width: 100px;
+    height: 50px;
+    background-color: rgb(15, 48, 15);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #b7e4c7; /* Light green for labels */
+    font-weight: 500;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid #74c69d; /* Light green border */
+    outline: none;
+    background-color: #ffffff;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #1b4332; /* Darker green on focus */
+  }
+  
+  textarea {
+    min-height: 120px;
+  }
+  
+  /* Submit button styling */
+  .submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: #1b4332; /* Dark green for submit button */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #081c15; /* Even darker green on hover */
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .appointment-container {
+      padding: 1.5rem;
+    }
+  
+    h2 {
+      font-size: 1.8rem;
+    }
+  
+    input, textarea {
+      padding: 0.7rem;
+    }
+  }
+
+/* Media query for smaller screens */
+@media (max-width: 1024px) {
+  .appointment-container {
+      padding: 1.5rem; /* Reduce padding for medium screens */
+  }
+
+  h2 {
+      font-size: 1.8rem; /* Adjust font size for medium screens */
+  }
+
+  input, textarea {
+      padding: 0.7rem; /* Adjust padding for inputs on medium screens */
+  }
+
+  .back {
+      font-size: 16px; /* Adjust font size for back button */
+  }
+}
+
+@media (max-width: 768px) {
+  .appointment-container {
+      padding: 1rem; /* Further reduce padding for smaller screens */
+  }
+
+  h2 {
+      font-size: 1.6rem; /* Adjust font size for smaller screens */
+  }
+
+  input, textarea {
+      padding: 0.6rem; /* Further adjust padding for inputs */
+  }
+
+  .submit-btn {
+      font-size: 1rem; /* Adjust font size for submit button */
+  }
+
+  .back {
+      width: 80px; /* Adjust width of the back button */
+      font-size: 14px; /* Further adjust font size */
+  }
+}
+
+@media (max-width: 576px) {
+  .appointment-container {
+      padding: 0.8rem; /* Adjust padding for very small screens */
+  }
+
+  h2 {
+      font-size: 1.4rem; /* Adjust font size for very small screens */
+  }
+
+  input, textarea {
+      padding: 0.5rem; /* Adjust padding for very small screens */
+  }
+
+  .submit-btn {
+      font-size: 0.9rem; /* Adjust font size for very small screens */
+  }
+
+  .back {
+      width: 70px; /* Further adjust width of the back button */
+      font-size: 12px; /* Further adjust font size */
+  }
+}

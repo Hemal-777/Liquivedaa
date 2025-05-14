@@ -1,0 +1,28 @@
+.service-features {
+  width: 100%;
+    background-color: #fff9f1; /* Light background like in the image */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow effect */
+  }
+  
+  .feature-box {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-box:hover {
+    transform: translateY(-10px);
+  }
+  
+  .icon {
+    font-size: 2rem;
+    color: #b89452; /* Matching icon color */
+  }
+  
+  h5 {
+    color: #4a4a4a; /* Text color for heading */
+    font-weight: 600;
+  }

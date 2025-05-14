@@ -1,0 +1,90 @@
+/* DropdownMenu.css */
+.dropdown-menu {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: rgb(60, 151, 23);
+    color: #000;
+    border: 1px solid #d24b4b;
+    box-shadow: 0 4px 8px rgba(24, 23, 23, 0.1);
+    z-index: 1000;
+    width: 180px; /* Adjust width if needed  */
+    display: none; /* Hide by default */
+  }
+  
+  .nav-icon:hover .dropdown-menu {
+    display: block; 
+  }
+  .dropdown-menu:hover{
+    display: block; 
+    background-color: rgb(123, 222, 123);
+  }
+  
+  .dropdown-item {
+    padding: 10px;
+    display: block;
+    color: #b82121;
+    background-color: green;
+    text-decoration: none;
+  }
+  
+  .dropdown-item:hover {
+    background-color: green;
+    
+  }
+  /* Extra Large Devices (Desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .dropdown-menu {
+      width: 200px; /* Wider dropdown for larger screens */
+  }
+
+  .dropdown-item {
+      font-size: 16px; /* Larger font size */
+  }
+}
+
+/* Large Devices (Desktops, 992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .dropdown-menu {
+      width: 180px; /* Standard width */
+  }
+
+  .dropdown-item {
+      font-size: 15px; /* Medium font size */
+  }
+}
+
+/* Medium Devices (Tablets, 768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .dropdown-menu {
+      width: 150px; /* Slightly narrower dropdown */
+  }
+
+  .dropdown-item {
+      font-size: 14px; /* Smaller font size for tablets */
+  }
+}
+
+/* Small Devices (Phones, 576px to 767px) */
+@media (max-width: 767px) {
+  .dropdown-menu {
+      width: 120px; /* Narrow dropdown for phones */
+  }
+
+  .dropdown-item {
+      padding: 8px; /* Reduced padding for smaller screens */
+      font-size: 13px; /* Smaller font size for phones */
+  }
+}
+
+/* Extra Small Devices (Phones, up to 575px) */
+@media (max-width: 575px) {
+  .dropdown-menu {
+      width: 100%; /* Full width on very small screens */
+      right: 0; /* Align to the right */
+  }
+
+  .dropdown-item {
+      font-size: 12px; /* Smaller font size for very small screens */
+  }
+}

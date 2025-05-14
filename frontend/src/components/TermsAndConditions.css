@@ -1,0 +1,70 @@
+.terms-container {
+    max-width: 800px; /* Limit the width for better readability */
+    margin: 40px auto; /* Center the container with margin */
+    padding: 20px; /* Add padding around the content */
+    background-color: #f9f9f9; /* Light gray background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    font-family: 'Arial', sans-serif; /* Use Arial font */
+    color: #333; /* Dark gray text color */
+  }
+  
+  .terms-container h1 {
+    font-size: 32px; /* Large heading */
+    margin-bottom: 20px; /* Space below the heading */
+    color: #06ce2e; /* Blue color for the main heading */
+    text-align: center; /* Center the heading */
+  }
+  
+  .terms-container h2 {
+    font-size: 24px; /* Subheading size */
+    margin-top: 30px; /* Space above subheadings */
+    margin-bottom: 10px; /* Space below subheadings */
+    color: #555; /* Medium gray color */
+  }
+  
+  .terms-container p {
+    font-size: 16px; /* Regular paragraph size */
+    line-height: 1.6; /* Better line spacing for readability */
+    margin-bottom: 20px; /* Space below paragraphs */
+  }
+  
+  .terms-container ul {
+    margin-bottom: 20px; /* Space below lists */
+    padding-left: 20px; /* Indent lists */
+  }
+  
+  .terms-container ul li {
+    font-size: 16px; /* List item size */
+    margin-bottom: 10px; /* Space below list items */
+  }
+  
+  .back-link {
+    display: inline-block; /* Make it a block for better spacing */
+    margin-top: 20px; /* Space above the link */
+    color: #007bff; /* Blue color for the link */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make it bold */
+  }
+  
+  .back-link:hover {
+    text-decoration: underline; /* Underline on hover for interactivity */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .terms-container {
+      padding: 15px; /* Less padding on smaller screens */
+    }
+  
+    .terms-container h1 {
+      font-size: 28px; /* Smaller heading for mobile */
+    }
+  
+    .terms-container h2 {
+      font-size: 22px; /* Smaller subheading for mobile */
+    }
+  
+    .terms-container p, .terms-container ul li {
+      font-size: 14px; /* Smaller font for paragraphs and lists */
+    }
+  }

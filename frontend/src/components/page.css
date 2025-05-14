@@ -1,0 +1,161 @@
+/* Container for the disease list */
+.disease-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 6 columns in a row */
+  gap: 20px; /* Space between items */
+  margin: 30px; /* Margin around container */
+  padding: 10px; /* Padding inside the container */
+  max-width: 1200px; /* Max width of container */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Each disease item styling */
+.disease-item {
+  background: linear-gradient(135deg, #8ad243, #144d1e); /* Blue gradient background */
+  border-radius: 12px; /* Rounded corners */
+  padding: 15px; /* Padding inside each item */
+  cursor: pointer; /* Change cursor on hover */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  height: 140px; /* Default height */
+  display: flex; /* Flexbox for alignment */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center children vertically */
+  align-items: center; /* Center children horizontally */
+  text-align: center; /* Center text */
+  transition: all 0.3s ease-in-out; /* Smooth transitions */
+  position: relative; /* To keep dropdown in the same flow */
+  color: #fff; /* White text */
+  z-index: 0;
+}
+
+/* Add margin around the opened item */
+.disease-item.open {
+  height: auto; /* Allow height to adjust */
+  background: linear-gradient(135deg, #386112, #ace98b); /* Change gradient when open */
+  margin-bottom: 20px; /* Add gap below the open item */
+  z-index: 10; /* Bring the open item to the front */
+}
+
+/* Add shadow and transformation when hovered */
+.disease-item:hover {
+  transform: translateY(-5px); /* Slight upward movement on hover */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15); /* Larger shadow on hover */
+}
+
+/* Header for each disease item */
+.disease-header {
+  display: flex; /* Flexbox for alignment */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  position: relative; /* Relative to position toggle link above */
+  z-index: 2; /* Ensure toggle link appears above dropdown */
+}
+
+/* Icon styles */
+.disease-icon {
+  color: #f9f871; /* Bright yellow icon */
+  margin-bottom: 10px; /* Space below icon */
+  font-size: 28px; /* Larger icon size */
+  transition: transform 0.3s ease; /* Rotate animation */
+}
+
+/* Rotate icon on hover */
+.disease-item:hover .disease-icon {
+  transform: rotate(360deg); /* Full rotation on hover */
+}
+
+/* Toggle icon styles */
+.toggle-icon {
+  color: #f9f871; /* Bright yellow arrow */
+  margin-top: 10px; /* Space above arrow */
+  font-size: 22px; /* Slightly larger arrow */
+  transition: transform 0.3s ease; /* Smooth icon transition */
+}
+
+/* Rotate arrow on toggle */
+.disease-item.open .toggle-icon {
+  transform: rotate(180deg); /* Rotate arrow on open */
+}
+
+/* Details section styling */
+.disease-details {
+  background-color: #fff; /* White background for details */
+  padding: 15px; /* Padding inside details */
+  margin-top: 10px; /* Space above details */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 100%; /* Same width as parent div */
+  position: relative; /* Keep within normal flow */
+  display: none; /* Initially hidden */
+  animation: fadeIn 0.4s ease forwards; /* Fade-in effect for dropdown */
+}
+
+/* Show details when the item is open */
+.disease-item.open .disease-details {
+  display: block; /* Show when the div is open */
+  margin-top: 15px; /* Add gap between header and details */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Slide in from below */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Final position */
+  }
+}
+/* Styles for unordered list in disease details */
+.disease-item ul {
+  padding-left: 0; /* Remove default padding */
+  margin: 0;
+  list-style-type: none; /* Ensure no bullet points */
+}
+
+/* List item styles */
+.disease-item li {
+  margin-bottom: 12px; /* Space between list items */
+  color: #333333; /* Dark gray color for links for better readability */
+  font-weight: 600; /* Slightly less bold than before */
+  cursor: pointer; /* Change cursor on hover */
+  transition: color 0.3s ease, transform 0.2s ease, background-color 0.3s ease; /* Smooth transition */
+  padding: 8px 12px; /* Padding for better touch area */
+  border-radius: 6px; /* Rounded corners */
+  background-color: rgba(255, 255, 255, 0.7); /* Light background for list items */
+}
+
+/* Underline and color change on hover for list items */
+.disease-item li:hover {
+  text-decoration: underline; /* Add underline on hover */
+  color: #2980b9; /* Change color on hover to a blue shade */
+  transform: scale(1.05); /* Slight scale on hover */
+  background-color: rgba(255, 255, 255, 0.9); /* Change background on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .disease-container {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns on medium screens */
+  }
+}
+
+@media (max-width: 900px) {
+  .disease-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on smaller screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .disease-container {
+    grid-template-columns: 1fr; /* 1 column on mobile screens */
+  }
+
+  .disease-item {
+    height: auto; /* Allow height to auto adjust for smaller screens */
+    padding: 20px; /* Increase padding for better touch targets */
+  }
+}

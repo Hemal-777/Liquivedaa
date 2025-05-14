@@ -1,0 +1,155 @@
+.app-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin: 20px;
+  }
+  
+  .left-section {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .text-container {
+    margin-bottom: 20px;
+  }
+  
+  .text-container h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .text-container p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .read-more {
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .read-more:hover {
+    text-decoration: underline;
+  }
+  
+  .images-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .large-image img {
+    width: 100%;
+    height: 300px; /* Adjust height if needed */
+    object-fit: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow to the large image */
+    border-radius: 8px; /* Adds slight rounding to corners */
+}
+
+.small-images {
+    display: flex;
+    gap: 30px;
+}
+
+.small-images img {
+    width: 100%;
+    height: 300px; /* Adjust height if needed */
+    object-fit: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow to the small images */
+    border-radius: 8px; /* Adds slight rounding to corners */
+}
+
+.right-section {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+}
+
+.right-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow to the right image */
+    border-radius: 8px; /* Adds slight rounding to corners */
+}
+
+  @media (max-width: 1024px) {
+    .app-container {
+        flex-direction: column; /* Stack sections vertically */
+        margin: 10px; /* Adjust margin */
+    }
+
+    .left-section,
+    .right-section {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+
+    .text-container h2 {
+        font-size: 1.8rem; /* Smaller heading */
+    }
+
+    .text-container p {
+        font-size: 0.9rem; /* Smaller paragraph text */
+    }
+
+    .right-image {
+        height: 250px; /* Adjust height for better fit */
+    }
+}
+
+/* For large mobile phones */
+@media (max-width: 768px) {
+    .app-container {
+        padding: 15px; /* Reduce padding */
+    }
+
+    .text-container h2 {
+        font-size: 1.5rem; /* Further reduce heading size */
+    }
+
+    .text-container p {
+        font-size: 0.85rem; /* Further reduce paragraph text */
+    }
+
+    .large-image img {
+        max-height: 250px; /* Adjust height */
+    }
+
+    .small-images img {
+        height: 120px; /* Adjust height for small images */
+    }
+
+    .right-image {
+        height: 200px; /* Adjust height */
+    }
+}
+
+/* For small mobile phones */
+@media (max-width: 480px) {
+    .app-container {
+        padding: 10px; /* Further reduce padding */
+    }
+
+    .text-container h2 {
+        font-size: 1.3rem; /* Smaller heading */
+    }
+
+    .text-container p {
+        font-size: 0.75rem; /* Smaller paragraph text */
+    }
+    .large-image img {
+        max-height: 200px; /* Adjust height */
+    }
+    .small-images img {
+        height: 100px; /* Adjust height for small images */
+    }
+    .right-image {
+        height: 150px; /* Adjust height */
+    }
+}

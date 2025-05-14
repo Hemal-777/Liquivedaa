@@ -1,0 +1,94 @@
+.products-container {
+  padding: 20px; /* Padding for the entire products page */
+}
+
+.product-column {
+  margin-bottom: 20px; /* Space between product columns */
+}
+
+.product-card {
+  border: none; 
+  height: 200px;/* Remove default border */
+  transition: transform 0.2s; /* Smooth hover effect */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for card */
+  border-radius: 10px; /* Rounded corners for card */
+  overflow: hidden; /* Ensures child elements do not overflow */
+  padding: 10px; /* Add padding inside card */
+}
+
+.product-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.product-image {
+  height: 150px; /* Set a fixed height for images */
+  width: 100%; /* Ensure images take full width */
+  object-fit: cover; /* Cover the area without distortion *//* Space below each image */
+}
+
+.product-title {
+  font-size: 1rem; /* Font size for product title */
+  font-weight: bold; /* Bold product title */
+}
+
+.product-description {
+  font-size: 0.9rem; /* Font size for description */
+  color: #666; /* Gray color for description */
+}
+
+.product-price {
+  font-size: 1.1rem; /* Font size for price */
+  color: #333; /* Dark color for price *//* Margin around price */
+}
+
+.button1 {
+  width: 90px;
+  height: 40px;
+  font-size: 15px;/* Full width for buttons */
+}
+
+/* Media Queries */
+@media (max-width: 576px) {
+  .product-column {
+    flex: 0 0 100%; /* 1 column for extra small devices */
+    max-width: 100%;/* Ensure full width */
+  }
+
+.product-card {
+  height: 100%;
+}
+
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .product-column {
+    flex: 0 0 50%; /* 2 columns for small devices (tablets) */
+    max-width: 50%; /* Ensure max width */
+  }
+.product-card{
+  height: 100%;
+}
+  .product-image {
+    height: 180px; /* Increase image height slightly for better visibility */
+  }
+}
+
+@media (min-width: 769px) {
+  .product-column {
+    flex: 0 0 33.33%; /* 3 columns for medium devices */
+    max-width: 33.33%; /* Ensure max width */
+  }
+  .product-card {
+    height: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .product-column {
+    flex: 0 0 25%; /* 4 columns for large devices */
+    max-width: 25%; /* Ensure max width */
+  }
+  .product-card{
+    height: 100%;
+  }
+}

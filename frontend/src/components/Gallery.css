@@ -1,0 +1,118 @@
+/* Gallery.css */
+
+.gallery-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #4CAF50; /* Main theme color */
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  animation: fadeIn 0.5s forwards; /* Fade in animation for the title */
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns layout */
+  gap: 15px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: 300px; /* Set a fixed height for uniformity */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effects */
+}
+
+.gallery-item:hover {
+  transform: scale(1.05); /* Scale up effect on hover */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%; /* Cover the entire height of the item */
+  object-fit: cover; /* Ensure the image covers the space without distortion */
+  display: block;
+  border-radius: 8px;
+  opacity: 0; /* Initial opacity for fade-in effect */
+  animation: fadeInImage 0.5s forwards; /* Fade in animation for images */
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeInImage {
+  to {
+      opacity: 1; /* Final opacity for images */
+  }
+}
+
+@media (min-width: 1200px) {
+  h1 {
+      font-size: 3rem; /* Larger font size for large screens */
+  }
+
+  .gallery-item {
+      height: 350px; /* Increase height for larger screens */
+  }
+}
+
+/* Large Devices (Desktops, 992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  h1 {
+      font-size: 2.8rem; /* Slightly smaller font size for medium desktops */
+  }
+
+  .gallery-item {
+      height: 300px; /* Maintain height for medium desktops */
+  }
+}
+
+/* Medium Devices (Tablets, 768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  h1 {
+      font-size: 2.5rem; /* Adjust font size for tablets */
+  }
+
+  .gallery-item {
+      height: 250px; /* Reduce height for tablets */
+  }
+}
+
+/* Small Devices (Phones, 576px to 767px) */
+@media (max-width: 767px) {
+  h1 {
+      font-size: 2rem; /* Adjust font size for small screens */
+  }
+
+  .gallery-item {
+      height: 200px; /* Reduced height for small screens */
+  }
+}
+
+/* Extra Small Devices (Phones, up to 575px) */
+@media (max-width: 575px) {
+  h1 {
+      font-size: 1.8rem; /* Smaller font size for very small screens */
+  }
+
+  .gallery-item {
+      height: 150px; /* Further reduce height for very small screens */
+  }
+}

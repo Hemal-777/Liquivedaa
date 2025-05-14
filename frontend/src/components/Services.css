@@ -1,0 +1,69 @@
+.services-container {
+  padding: 40px;
+  text-align: center;
+}
+
+/* Title styling */
+.services-title {
+  font-size: 36px;
+  color: #2f855a;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Grid layout - 4 columns */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+/* Service card styling */
+.service-card {
+  width: 250px;
+  height: 300px;
+  gap: 0px;
+  border-radius: 22px;
+  border: 2px solid rgb(239, 209, 12);
+  background-color: #F1B14A3B;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Lower intensity animation */
+}
+
+/* Slight hover effect */
+.service-card:hover {
+  transform: scale(1.03); /* Minimal scale */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow change */
+}
+
+/* Image styling */
+.service-card img {
+  width: 250px;
+  height: 220px;
+  border-radius: 22px;
+  margin-bottom: 15px;
+  transition: opacity 0.2s ease-in; /* Low animation effect */
+}
+
+/* Text styling */
+.service-card h3 {
+  font-size: 18px;
+  color: #2f855a;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablet screens */
+  }
+}
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr; /* 1 column for mobile screens */
+  }
+}
